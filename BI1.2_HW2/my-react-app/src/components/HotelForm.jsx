@@ -39,7 +39,7 @@ const HotelForm = () => {
         event.preventDefault()
         console.log(formData)
         try{
-            const response = await fetch("http://localhost:3000/hotels",{
+            const response = await fetch("https://apis-repo.vercel.app/hotels",{
                 method:"POST",
                 body:JSON.stringify(formData),
                 headers:{
