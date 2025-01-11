@@ -2,7 +2,7 @@ import useFetch  from "../useFetch";
 
 const BookByTitle = ({bookTitle}) => {
 
-    const {data,loading,error}= useFetch(`http://localhost:3000/books/${bookTitle}`)
+    const {data,loading,error}= useFetch(`https://be-4-assignment1-delta.vercel.app/books/${bookTitle}`)
     console.log(data)
     return(
         <>
